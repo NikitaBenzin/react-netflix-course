@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		// Целевой стандарт JS: самые новые возможности ES
+		"target": "ESNext",
+		// Инициализация полей классов как в спецификации
+		"useDefineForClassFields": true,
+		// Подключаемые библиотеки: DOM API, итераторы и последние возможности ES
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		// Разрешить компилировать .js файлы наряду с .ts
+		"allowJs": true,
+		// Пропускать проверку типов в node_modules и библиотеках
+		"skipLibCheck": true,
+		// Совместимость между CommonJS и ES-модулями
+		"esModuleInterop": true,
+		// import type { MyType } from './types'
+		"verbatimModuleSyntax": true,
+		// Позволяет импортировать дефолтные экспорты синтетически
+		"allowSyntheticDefaultImports": true,
+		// Включить строгую проверку типов
+		"strict": true,
+		// Проверять регистр букв в именах файлов (важно для кроссплатформы)
+		"forceConsistentCasingInFileNames": true,
+		// Модульная система: ESNext (современные модули)
+		"module": "ESNext",
+		// Разрешение модулей как в Node.js
+		"moduleResolution": "Node",
+		// Позволяет импортировать JSON-файлы как модули
+		"resolveJsonModule": true,
+		// Каждый файл компилируется изолированно (для совместимости с Babel)
+		"isolatedModules": true,
+		// Не генерировать выходные файлы (используется только для проверки типов)
+		"noEmit": true,
+		// Поддержка JSX-синтаксиса для React
+		"jsx": "react-jsx"
+	},
+	// Включить только папку src для компиляции
+	"include": ["src"]
+}
